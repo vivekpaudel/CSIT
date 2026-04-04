@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Multimedia</title>
+    <style>
+        body {
+            background-color: #fff3e0;
+            text-align: center;
+            font-family: Verdana, sans-serif;
+            color: #333;
+        }
+        .media-container {
+            background: white;
+            display: inline-block;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        img, audio, video, iframe {
+            max-width: 100%;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #e65100;
+            border-bottom: 2px solid #e65100;
+            display: inline-block;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #e65100;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Kori Trek</h1>
+    <hr>
+    
+    <div class="media-container">
+        <h2>Destination Image</h2><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyVP4Yd7LoQ1Z6L-USQr7iBWuDQW8nMvSuOQ&s" width="800px" alt="Travel Destination">
+    </div>
+
+    <div class="media-container">
+        <h2>Barking of Bhotey Kukur</h2><br>
+        <audio controls>
+            <source src="audio_guide.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="media-container">
+        <h2>Video Tour</h2><br>
+        <video controls width="600">
+            <source src="IMG_2239.MOV" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </div>
+
+    <div class="media-container">
+        <h2>Useful Link</h2><br>
+        <a href="https://www.nepaltourism.com" target="_blank">Visit Nepal Tourism</a>
+    </div>
+
+    <div class="media-container">
+        <h2>Map Location</h2><br>
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=85.3240%2C27.7172%2C85.3240%2C27.7172&layer=mapnik" width="600" height="300" style="border: 1px solid black"></iframe>
+    </div>
+</body>
+</html>

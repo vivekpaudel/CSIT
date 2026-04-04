@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e8f5e9;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 550px;
+            border-collapse: separate;
+            border-spacing: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 0 auto;
+        }
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+        label {
+            font-weight: bold;
+            color: #2e7d32;
+        }
+    </style>
+    <link rel="stylesheet" href="styleRegisterForm.css">
+</head>
+<body>
+    <h1 style="color: #1b5e20; text-align: center; font-family: Arial, sans-serif; text-transform: uppercase;">
+        Student Registration Form
+    </h1>
+    <form>
+        <table>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" name="name" placeholder="Enter full name"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="email" placeholder="example@mail.com"></td>
+            </tr>
+            <tr>
+                <td><label>Phone</label></td>
+                <td><input type="tel" name="phone" placeholder="98XXXXXXXX"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td><label>Country</label></td>
+                <td>
+                    <select>
+                        <option>Nepal</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Register Now</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <style>
+ 
+        h1 {
+            text-align: center;
+            padding: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #604800;
+        }
+        .gallery {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: 250px;
+            margin: 20px;
+            border: 4px solid #ffca28;
+            background-color: #424242;
+            object-fit: cover;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .gallery img:hover {
+            transform: rotate(5deg) scale(1.1);
+            opacity: 1;
+            box-shadow: 0 0 20px #ffca28;
+            border-radius: 5px;
+        }
+        .gallery img:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px #fff;
+        }
+        table {
+            margin: 0 auto;
+            border-spacing: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vivek's Photography</h1>
+    <div class="gallery">
+        <table>
+            <tr>
+                <td><img src="https://picsum.photos/300/250?random=1" alt="Photo 1"></td>
+                <td><img src="https://picsum.photos/300/250?random=2" alt="Photo 2"></td>
+                <td><img src="https://picsum.photos/300/250?random=3" alt="Photo 3"></td>
+            </tr>
+            <tr>
+                <td><img src="https://picsum.photos/300/250?random=4" alt="Photo 4"></td>
+                <td><img src="https://picsum.photos/300/250?random=5" alt="Photo 5"></td>
+                <td><img src="https://picsum.photos/300/250?random=6" alt="Photo 6"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
