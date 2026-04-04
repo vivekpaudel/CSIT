@@ -1,7 +1,3 @@
-Absolutely! Below is the **complete list of all unique programs** covered so far, **each with its title as a comment**, and **no repetitions or omissions**. The order follows your original lab sequence (Lab 1 through Number Theoretic Algorithms), including all requested algorithms from Labs 2–5 and the number-theoretic ones.
-
----
-
 ```c
 // TITLE 1: IMPLEMENTATION OF GREATEST COMMON DIVISOR (GCD) USING EUCLIDEAN ALGORITHM
 #include <stdio.h>
