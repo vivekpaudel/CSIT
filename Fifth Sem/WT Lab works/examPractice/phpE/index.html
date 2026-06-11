@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div class="form">
+            <form method="post" action="process.php">
+                <table
+                    cellpadding="2"
+                    style="border-collapse: collapse"
+                    id="formTable"
+                >
+                    <tr>
+                        <th>Name:</th>
+                        <td><input type="text" id="name" name="name" /></td>
+                    </tr>
+                    <tr>
+                        <th>Phone:</th>
+                        <td>
+                            <input
+                                type="text"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Address:</th>
+                        <td>
+                            <input type="text" id="address" name="address" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Anything:</th>
+                        <td>
+                            <input type="text" id="anything" name="anything" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Click to submit:</th>
+                        <td>
+                            <input
+                                type="submit"
+                                id="submitButton"
+                                value="Submit"
+                            />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

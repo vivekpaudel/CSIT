@@ -1,141 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Positioning Demo</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Verdana, sans-serif; background: #fafafa; color: #000; }
-        
-        /* Fixed Navigation */
-        .navbar {
-            position: fixed; top: 0; width: 100%;
-            background: #e8e8e8; border-bottom: 2px solid #555;
-            padding: 12px 30px; display: flex;
-            justify-content: space-between; align-items: center;
-            z-index: 1000;
-        }
-        .navbar .logo { font-weight: bold; font-size: 18px; color: #222; }
-        .navbar .nav-links a {
-            color: #333; text-decoration: none;
-            margin-left: 20px; font-size: 14px;
-        }
-        .navbar .nav-links a:hover { color: #000; text-decoration: underline; }
-        
-        /* Hero - Relative + Absolute */
-        .hero {
-            position: relative; height: 50vh;
-            background: #d8d8d8; border: 2px solid #555;
-            margin-top: 55px;
-        }
-        .hero-text {
-            position: absolute; top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            background: #f0f0f0; border: 2px solid #555;
-            padding: 25px; text-align: center;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-        }
-        .hero-text h1 { font-size: 22px; margin-bottom: 10px; color: #111; }
-        .hero-text p { color: #333; margin-bottom: 15px; }
-        .hero-text .btn {
-            background: #e0e0e0; color: #000;
-            border: 2px solid #555; padding: 8px 20px;
-            cursor: pointer; margin-top: 10px;
-            font-weight: 600;
-        }
-        .hero-text .btn:hover { background: #555; color: #fff; }
-        
-        /* Sticky Header */
-        .sticky {
-            position: sticky; top: 55px;
-            background: #e8e8e8; border-top: 2px solid #555;
-            border-bottom: 2px solid #555;
-            padding: 10px; text-align: center;
-            font-weight: bold; z-index: 900;
-            color: #222;
-        }
-        
-        /* Content */
-        .container { max-width: 700px; margin: 0 auto; padding: 30px 20px; }
-        .container p { margin-bottom: 15px; line-height: 1.6; color: #222; }
-        .container h3 { margin: 20px 0 10px; border-bottom: 2px solid #888; padding-bottom: 5px; color: #111; }
-        .container hr { border-color: #999; margin: 15px 0; }
-        
-        /* Footer */
-        .footer {
-            background: #e8e8e8; border-top: 2px solid #555;
-            padding: 20px; text-align: center;
-            font-size: 13px; margin-top: 40px;
-            color: #222;
-        }
-        
-        @media print {
-            body { font-size: 11pt; background: #fff; }
-            .navbar, .hero-text, .sticky, .footer { border: 1px solid #000; }
-            .hero { border: 1px solid #000; background: #f0f0f0; }
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Positioning Demo</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Segoe UI", Verdana, sans-serif;
+                background: #fafafa;
+                color: #000;
+            }
 
-    <!-- Fixed Navigation -->
-    <nav class="navbar">
-        <div class="logo">CSS Positioning Demo</div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Examples</a>
-            <a href="#">Contact</a>
-        </div>
-    </nav>
+            /* Fixed Navigation */
+            .navbar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background: #e8e8e8;
+                border-bottom: 2px solid #555;
+                padding: 12px 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1000;
+            }
+            .navbar .logo {
+                font-weight: bold;
+                font-size: 18px;
+                color: #222;
+            }
+            .navbar .nav-links a {
+                color: #333;
+                text-decoration: none;
+                margin-left: 20px;
+                font-size: 14px;
+            }
+            .navbar .nav-links a:hover {
+                color: #000;
+                text-decoration: underline;
+            }
 
-    <!-- Relative + Absolute -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>CSS Positioning Types</h1>
-            <p>Fixed • Relative • Absolute • Sticky</p>
-            <button class="btn">Learn More</button>
-        </div>
-    </section>
+            /* Hero - Relative + Absolute */
+            .hero {
+                position: relative;
+                height: 50vh;
+                background: #d8d8d8;
+                border: 2px solid #555;
+                margin-top: 55px;
+            }
+            .hero-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #f0f0f0;
+                border: 2px solid #555;
+                padding: 25px;
+                text-align: center;
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            }
+            .hero-text h1 {
+                font-size: 22px;
+                margin-bottom: 10px;
+                color: #111;
+            }
+            .hero-text p {
+                color: #333;
+                margin-bottom: 15px;
+            }
+            .hero-text .btn {
+                background: #e0e0e0;
+                color: #000;
+                border: 2px solid #555;
+                padding: 8px 20px;
+                cursor: pointer;
+                margin-top: 10px;
+                font-weight: 600;
+            }
+            .hero-text .btn:hover {
+                background: #555;
+                color: #fff;
+            }
 
-    <!-- Sticky Header -->
-    <div class="sticky">
-        📌 Scroll to see sticky behavior
-    </div>
+            /* Sticky Header */
+            .sticky {
+                position: sticky;
+                top: 55px;
+                background: #e8e8e8;
+                border-top: 2px solid #555;
+                border-bottom: 2px solid #555;
+                padding: 10px;
+                text-align: center;
+                font-weight: bold;
+                z-index: 900;
+                color: #222;
+            }
 
-    <!-- Content -->
-    <main class="container">
-        <p><strong>Demonstration by:</strong> Vivek Paudel</p>
-        <hr>
-        
-        <h3>Overview</h3>
-        <p>
-            This page demonstrates CSS positioning properties used in modern web layouts.
-            The navigation bar uses <strong>fixed</strong> positioning to remain visible.
-            The hero section uses <strong>relative</strong> and <strong>absolute</strong> 
-            for centered text overlay. The header uses <strong>sticky</strong> positioning.
-        </p>
-        
-        <h3>How It Works</h3>
-        <p>
-            Scroll down to observe the fixed navbar staying at top and the sticky header 
-            sticking after you scroll past it. These positioning techniques are essential 
-            for creating professional, user-friendly website interfaces.
-        </p>
-        
-        <div style="height: 500px;"></div>
-        
-        <p style="text-align: center; color: #555; font-style: italic;">
-            End of demonstration
-        </p>
-    </main>
+            /* Content */
+            .container {
+                max-width: 700px;
+                margin: 0 auto;
+                padding: 30px 20px;
+            }
+            .container p {
+                margin-bottom: 15px;
+                line-height: 1.6;
+                color: #222;
+            }
+            .container h3 {
+                margin: 20px 0 10px;
+                border-bottom: 2px solid #888;
+                padding-bottom: 5px;
+                color: #111;
+            }
+            .container hr {
+                border-color: #999;
+                margin: 15px 0;
+            }
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Web Technology Lab | CSS Positioning Exercise</p>
-        <p><strong>Prepared by: Vivek Paudel</strong></p>
-        <p style="font-size: 11px; margin-top: 8px;">BSc. CSIT • Prithvi Narayan Campus, Pokhara</p>
-    </footer>
+            /* Footer */
+            .footer {
+                background: #e8e8e8;
+                border-top: 2px solid #555;
+                padding: 20px;
+                text-align: center;
+                font-size: 13px;
+                margin-top: 40px;
+                color: #222;
+            }
 
-</body>
+            @media print {
+                body {
+                    font-size: 11pt;
+                    background: #fff;
+                }
+                .navbar,
+                .hero-text,
+                .sticky,
+                .footer {
+                    border: 1px solid #000;
+                }
+                .hero {
+                    border: 1px solid #000;
+                    background: #f0f0f0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Fixed Navigation -->
+        <nav class="navbar">
+            <div class="logo">CSS Positioning Demo</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Examples</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Relative + Absolute -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>CSS Positioning Types</h1>
+                <p>Fixed • Relative • Absolute • Sticky</p>
+                <button class="btn">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Sticky Header -->
+        <div class="sticky">📌 Scroll to see sticky behavior</div>
+
+        <!-- Content -->
+        <main class="container">
+            <p><strong>Demonstration by:</strong> Vivek Paudel</p>
+            <hr />
+
+            <h3>Overview</h3>
+            <p>
+                This page demonstrates CSS positioning properties used in modern
+                web layouts. The navigation bar uses
+                <strong>fixed</strong> positioning to remain visible. The hero
+                section uses <strong>relative</strong> and
+                <strong>absolute</strong> for centered text overlay. The header
+                uses <strong>sticky</strong> positioning.
+            </p>
+
+            <h3>How It Works</h3>
+            <p>
+                Scroll down to observe the fixed navbar staying at top and the
+                sticky header sticking after you scroll past it. These
+                positioning techniques are essential for creating professional,
+                user-friendly website interfaces.
+            </p>
+
+            <div style="height: 500px"></div>
+
+            <p style="text-align: center; color: #555; font-style: italic">
+                End of demonstration
+            </p>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Web Technology Lab | CSS Positioning Exercise</p>
+            <p><strong>Prepared by: Vivek Paudel</strong></p>
+            <p style="font-size: 11px; margin-top: 8px">
+                BSc. CSIT • Prithvi Narayan Campus, Pokhara
+            </p>
+        </footer>
+    </body>
 </html>

@@ -1,0 +1,33 @@
+th,
+td,
+table {
+    color: green;
+}
+
+#submitButton {
+    background-color: gray;
+    color: black;
+    font-weight: 900;
+    font-style: italic;
+    font-family: monospace;
+    padding: 4px 12px 4px 12px;
+    border-radius: 4px;
+    position: relative;
+    left: 20px;
+}
+
+.form {
+    background-image: url("99820.jpg");
+    padding: 8px 20px 100% 20px;
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        padding: 8px 20px 0% 20px;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}

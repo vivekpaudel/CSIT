@@ -1,0 +1,17 @@
+#numberForm,
+#username,
+.checkbox {
+    color: red;
+    padding: 4px;
+    background-color: mintcream;
+}
+
+:root {
+    background-color: green;
+}
+
+/*.checkbox {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}*/

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form validation</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div>
+            <form onsubmit="return validation();">
+                <div>
+                    <label for="username">Username:</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="username"
+                        required
+                    />
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                        placeholder="password"
+                    />
+                </div>
+                <div class="checkbox">
+                    <input
+                        type="checkbox"
+                        name="education"
+                        id="checkboxEducation"
+                    />
+                    <label for="checkboxEducation">Education</label>
+                    <input
+                        type="checkbox"
+                        name="semiEducation"
+                        id="checkboxsemiEducation"
+                    />
+                    <label for="checkboxsemiEducation">semiEducation</label
+                    ><input
+                        type="checkbox"
+                        name="Uneducation"
+                        id="checkboxUneducation"
+                    />
+                    <label for="checkboxUneducation">Uneducation</label>
+                </div>
+                <select id="selectOption">
+                    <option>12</option>
+                    <option>Bachelors</option>
+                    <option>Masters</option>
+                </select>
+                <h4>Gender?</h4>
+                <input
+                    type="radio"
+                    id="genderMale"
+                    name="gender"
+                    value="male"
+                />
+                <label for="genderMale">Male</label>
+                <input
+                    type="radio"
+                    id="genderFemale"
+                    name="gender"
+                    value="female"
+                />
+                <label for="genderFemale">Female</label>
+                <br />
+                <input type="submit" id="submitButton" value="Submit" /><br />
+                Number: <input type="text" id="numberForm" />
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

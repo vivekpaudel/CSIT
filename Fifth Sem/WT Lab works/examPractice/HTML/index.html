@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+        <title>Web Page</title>
+    </head>
+
+    <nav style="background-image: url(55252854454_c4ed9aa664_o.jpg)">
+        The nav bar?
+        <button style="border-color: red">Click me</button>
+    </nav>
+    <body style="background-color: greenyellow;">
+        <strong> This is a strong text</strong>
+        <br />
+        <b> And this is bold text </b>
+        <br />
+        <div class="nasaImage" style="background-color: black">
+            <h1 style="background-color: mintcream">Nasa's Image</h1>
+            <img
+                src="55252854454_c4ed9aa664_o.jpg"
+                alt="This is a nasa image clicked by james webb telescope. Universe is beautiful!"
+                height="100%"
+                width="100%"
+            />
+        </div>
+        <div class="galaxyBrain"  style="background-color: mintcream; text-align: center;">
+            <h3>Galaxy Brain</h3>
+            <video controls height="50%" width="50%" loop>
+                <source
+                    src="Galaxy Brain meme [DmH6YPWhaDY].mkv"
+                    type="video/mp4"
+                />
+            </video>
+            <br />
+            <audio controls>
+                <source
+                    src="Galaxy Brain meme [DmH6YPWhaDY].wav"
+                    type="audio/wav"
+                />
+            </audio>
+        </div>
+        <div class="listDiv" style="background-color: gray">
+            <h1>LISTS</h1>
+            <h3>Unordered Lists</h3>
+            <ul style="list-style-type: square">
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ul>
+            <h3>Ordered List</h3>
+            <ol type="A" start="0"">
+                <li>One</li>
+                <li>two</li>
+                <li>Three</li>
+            </ol>
+        </div>
+        <div class="tableDiv"  style="background-color: navajowhite">
+            <h3>Table</h3>
+            <table  border = 1px, style="border-color: black; border-collapse: collapse; width: 50%; vertical-align: middle;"  cellpadding = 20px >
+                <caption> Sales table caption</caption>
+                <tr>
+                    <th rowspan="3">Region</th>
+                    <th rowspan="3"> Product</th>
+                    <th colspan="4">Quaterly Performance</th>
+                    <th rowspan="3">Total</th>
+                </tr>
+                <tr>
+                    <td colspan="2">First Half</td>
+                    <td colspan="2">Second Half</td>
+                </tr>
+                <tr>
+                    <td>Q1</td>
+                    <td>Q2</td>
+                    <td>Q3</td>
+                    <td>Q4</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">East</td>
+                    <td>laptops</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Phones</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td colspan ="5">Region Average</td>
+                    <td>332.5</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">East</td>
+                    <td>laptops</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Phones</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td colspan ="5">Region Average</td>
+                    <td>332.5</td>
+                </tr>
+                <tr>
+                    <td colspan="6"> Overall Company Avarage</td>
+                    <td> 312.5</td>
+                </tr>
+            </table>
+        </div>
+        <div class="formDiv">
+            <h2>Forms</h2>
+            <form action="http://127.0.0.1:8080/Fifth Sem/WT Lab works/Lab works/userRegistrationQwen.html" method="get">
+                <div>
+                    <label for="email1"> Email:</label>
+                    <input type="email" id="email1" name="email" required autocomplete="on">
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male"> Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female"> Female</label>
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label>
+                </div>
+                <div>
+                    <select id="dropDown" name="fruits">
+                        <option value="apple">Apple</option>
+                        <option value="mango">Mango</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="textArea">Anything else?</label>
+                    <textarea id="textArea" rows="5" cols="50" placeholder="Write here"></textarea>
+                </div>
+                <div>
+                    <input type="submit" id="submit--button" value="Lets Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
